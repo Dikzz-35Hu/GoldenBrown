@@ -15,7 +15,8 @@ jobs:
           DISCORD_WEBHOOK: https://discord.com/api/webhooks/1459370838993408194/EwEaiuLAc2HmWg8HNVq_xnvj4dZR_4d9nV6lVa68gOJe9robrZJ5p8vvJ3MxLQmnA9o-
           DISCORD_USERNAME: Golden Brown RP
           DISCORD_AVATAR: https://i.imgur.com/4M34hi2.png
-          DISCORD_MESSAGE: |
-            🚀 **Update Baru Golden Brown Roleplay**
-            📦 Ada commit baru di repository!
-            🔧 Developer sedang memasak 🔥
+          DISCORD_EMBEDS: |
+            [{
+              "color": 16766720,
+              "description": "${{ github.event.head_commit.timestamp }}"
+            }]
