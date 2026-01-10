@@ -15,8 +15,4 @@ jobs:
           DISCORD_WEBHOOK: https://discord.com/api/webhooks/XXXXX/XXXXX
           DISCORD_USERNAME: Golden Brown RP
           DISCORD_AVATAR: https://i.imgur.com/4M34hi2.png
-          DISCORD_EMBEDS: |
-            [{
-              "color": 16766720,
-              "description": "${{ github.event.head_commit.message }}"
-            }]
+          DISCORD_EMBEDS: '[{"color":16766720,"description":"${{ github.event.head_commit.message }}"}]'
