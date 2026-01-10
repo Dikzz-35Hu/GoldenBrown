@@ -9,17 +9,16 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Set date
+      - name: Set Date
         run: echo "DATE=$(date +'%d/%m/%Y')" >> $GITHUB_ENV
 
-      - name: Send Discord Embed
+      - name: Send message to Discord
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: https://discord.com/api/webhooks/XXXXX/XXXXX
           DISCORD_USERNAME: Golden Brown RP
           DISCORD_AVATAR: https://i.imgur.com/4M34hi2.png
-          DISCORD_EMBEDS: |
-            [{
-              "color": 16766720,
-              "description": "[GoldenBrown.main]\n${{ github.event.head_commit.message }}\n${{ env.DATE }}"
-            }]
+          DISCORD_MESSAGE: |
+            🟡 **[GoldenBrown.main]**
+            ${{ github.event.head_commit.message }}
+            📅 ${{ env.DATE }}
