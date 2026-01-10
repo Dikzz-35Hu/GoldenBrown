@@ -18,4 +18,5 @@ jobs:
           DISCORD_EMBEDS: |
             [{
               "color": 16766720,
+              "description": "${{ github.event.head_commit.message }}"
             }]
