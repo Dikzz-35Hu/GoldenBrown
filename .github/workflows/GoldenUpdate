@@ -3,6 +3,7 @@
 # 🛠️ FIXED GOLDEN BROWN
 - [F] MyCard Hiden
 - [F] Procced Drive-By feature
+- [F] Drive-By spam amunition
 - [F] Business dialog back buy
 
 ## 🧰 ADD FEATURE
@@ -12,5 +13,6 @@
 
 # 🤖 GOLDEN BOT
 - [+] Embeds color golden
-- [+] 
+- [F] Fixed anti comment
+- [F] Dialog biodata
 |------------------------------|
